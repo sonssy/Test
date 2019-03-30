@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>제이쿼리테스트</title>
+        
+        <script src="/static/js/jquery-3.3.1.min.js"></script>
+
+        <script>
+            $(function(){
+                $("li").each(function(i,k){
+                    $(k).text("인덱스-"+i);
+                });
+            });
+        </script>
+
+    </head>
+    <body>
+    <div>
+       <ul id="first">
+            <li> 자바</li>
+            <li class="one">jsp</li>
+            <li class="two">안드로이드</li>
+            <li class="three">스프링</li>
+        </ul>
+        </li>
+    </ul>
+
+    <div id="p2" class="red">
+        <ul>
+            <li>사과</li>
+            <li>배</li>
+        </ul>
+        <ul>
+            <li>감</li>
+            <li>귤</li>
+        </ul>
+        <ul>
+            <li>포도</li>
+            <li>키위</li>
+        </ul>
+        <ul>
+            <li>바나나</li>
+            <li>복숭아</li>
+        </ul>
+    </div>
+
+
+
+    </div>
+    </body>
+</html>

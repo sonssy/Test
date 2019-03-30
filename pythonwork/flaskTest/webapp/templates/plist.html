@@ -1,0 +1,19 @@
+<html>
+<body>
+    <ul>
+        {% for item in plist %}
+        <li>상품명:{{item}}</li>
+        {% endfor %}
+    </ul>
+
+<table border="1">
+    {% for item in plist %}
+    <tr>
+        <td>상품명: </td>
+        <td>{{item}}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>

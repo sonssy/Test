@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>자바스크립트연습1</title>
+    </head>
+    <body>
+        <h1 align="center">자바스크립트</h1>
+        <script>
+            s=100;
+            document.write(s+"<br>");
+            document.write(typeof(s)+"<br>");
+            s="dkdkdk"
+            h="wqewqe"
+            document.write(s.toUpperCase() +"<br>");
+            document.write(h.toLowerCase() +"<br>");
+        </script>
+
+        <h3 id="c" style="color: blueviolet;background-color: brown;">아아아아아아</h3>
+        <button onclick="cng()"> 색바꾸기</button>
+
+        <script>
+            function cng(){
+                var use=confirm("바꾸시겠씁니까?")//물어보는창
+                if(use==true){
+                var cha= document.getElementById("c")
+                cha.style.color="black";
+                cha.style.backgroundColor="orange";
+                }else{
+                    alert("최소하였습니다.")//알러창
+                }
+
+            }
+        </script>
+
+
+
+
+    </body>
+</html>

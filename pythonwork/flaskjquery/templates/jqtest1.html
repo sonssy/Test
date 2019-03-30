@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>제이쿼리테스트</title>
+        
+        <script src="/static/js/jquery-3.3.1.min.js"></script>
+
+        <script>
+            $(function(){
+              $("h1,h3").css("background-color","yellow")
+                        .css("border","2px solid blue");
+                $("h2,#iamh3").css("border","5px dotted red")
+
+
+              $(".one").parent().css("border","2px solid green");
+              $("#first").children().css("background-color","yellow");
+              $(".one").prev().css("border","5px solid red");
+              $(".one").next().css("border","5px solid blue");
+              $(".two").siblings().css("background-color","pink");
+
+            $("#p2 ul:first").css("background-color","yellow");
+            $("#p2 ul:last").css("background-color","blue");
+            $("#p2 ul:even").css("border","5px dotted red")
+            $("#p2 ul:odd").css("border","5px dotted green")
+
+            
+
+            });
+        </script>
+
+    </head>
+    <body>
+    <div>
+------
+        <h1>사관</h1>
+        <h2>감자</h2>
+        <h3>고무마</h3>
+        <h3 id="iamh3">직접선택자</h3>
+-----------
+    <ul>
+        <li>
+        <ul id="first">
+            <li> 자바</li>
+            <li class="one">jsp</li>
+            <li class="two">안드로이드</li>
+            <li class="three">스프링</li>
+        </ul>
+        </li>
+    </ul>
+-------------
+    <div id="p2" class="red">
+        <ul>
+            <li>사과</li>
+            <li>배</li>
+        </ul>
+        <ul>
+            <li>감</li>
+            <li>귤</li>
+        </ul>
+        <ul>
+            <li>포도</li>
+            <li>키위</li>
+        </ul>
+        <ul>
+            <li>바나나</li>
+            <li>복숭아</li>
+        </ul>
+-----------------
+
+
+
+
+
+
+
+    </div>
+
+
+
+    </div>
+    </body>
+</html>

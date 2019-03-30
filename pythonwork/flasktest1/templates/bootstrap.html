@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+      {% include "import.html" %}
+    <title>Hello, world!</title>
+  </head>
+ 
+  <body>
+    {% include "menu.html" %}
+
+    <div class="container-fluid">
+
+   <!--배경이미지넣기-->
+    <div class="jumbotron" style="background-image:url('/static/backimg.jpg');background-size: cover">
+      <!--글꼴바꾸기-->
+      <h1 class="display-4" style="font-family: 'Nanum Pen Script', cursive; font-size: 100px;">허허허</h1>
+      <p class="lead" style="font-family: 'Nanum Pen Script', cursive; font-size: 50px">간단히.</p>
+      <hr class="my-4">
+      <p style="font-family: 'Black And White Picture', sans-serif;font-size: 30px">상세히</p>
+      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    </div>
+    
+
+    <div class="card-group">
+        <div class="card border-primary mb-3" style="max-width: 18rem;">
+          <img src="/static/backimg.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/static/earth.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Earth</h5>
+            <p class="card-text">지구</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <a href="https://getbootstrap.com/"><img src="/static/bootstrap.svg" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+            <h5 class="card-title">Bootstrap</h5>
+            <p class="card-text">부트스트랩</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>스타일시트연습</title>
+        <!--외부꺼 적용-->
+        <link rel="stylesheet" type="text/css" href="/static/mystyle.css"/>
+        
+        <!--내부 적용 *은 전부 ~.~~~ 는 클래스-->
+        <style type="text/css">
+        /*
+        *{color: gray;} 
+        p{color: purple;}
+        p.qq{color: orangered;}
+        .fontcolor{color: royalblue;}
+        #TT{color: turquoise;}*/
+        a{color: darkblue;background-color: darkkhaki;}
+        a:hover{color: coral}
+        p:hover{background-color: darkred;}
+        div:hover{background-color: deeppink}
+        
+        </style>
+    </head>
+    <body>
+        <h1>스타일시트</h1>
+        <p>외부스타일 시트를 이용하여 서식을 줌
+        </p>
+        <p style="color: palegreen">스타일시트</p>
+        
+        <p>
+            <div>
+                div태그입니다.
+            </div>
+        </p>
+
+        <!--클래스-->
+        <p class="qq">p.class로 적용중</p>
+        <p>연습실습연습실습<div class="fontcolor">연습실습</div>연습실습연<span class="fontcolor">연습실습</span>습실습연습실습연습실습</p>
+        <!--id id 는 하나만 지정하는것 중복x-->
+        <p id="TT">id갑으로 적용</p>
+        <a href="http://www.naver.com" target="_blank">naver</a>
+
+        <p style="letter-spacing: 3px">글사이간격</p>
+        <p style="letter-spacing: 5px">글사이간격</p>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>제이쿼리테스트</title>
+        
+        <script src="/static/js/jquery-3.3.1.min.js"></script>
+
+        <script>
+            $(function(){
+                var use=confirm("바꾸시겠씁니까?")//물어보는창
+                if(use==true){
+
+                var val = $("#un").val();
+                $("#my").val(val);
+                var copy = $("#un").clone();
+                $(copy).insertAfter("#un");
+                $("#my").css("color","red");
+                }else{
+                    alert($("h1").html());
+                }
+            });
+        </script>
+
+    </head>
+    <body>
+    <div>
+        <h1>제이쿼리</h1>
+        <p><input type="text" value="dasd" id="un"/></p>
+        <p><input type="text" id="my"/></p>
+        
+    </div>
+    </body>
+</html>

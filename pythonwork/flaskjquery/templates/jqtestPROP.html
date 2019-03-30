@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>제이쿼리테스트</title>
+        
+        <script src="/static/js/jquery-3.3.1.min.js"></script>
+
+        <script>
+            $(function(){
+             $("#st_1").prop("title","title속성값");
+             $("#tx1").text($("#st_1").prop("title"));
+             $("#tx2").text($("#st_1").prop("tagName"));
+             $("#tx3").text($("#sel").prop("selectedIndex"));
+            });
+        </script>
+
+    </head>
+    <body>
+    <div>
+        <p id="st_1">내용</p>
+        <p id="tx1"></p>
+        <p id="tx2"></p>
+        <select id="sel">
+            <option>네이버</option>
+            <option>네이버1</option>
+            <option selected>네이버2</option>
+        </select>
+        <p id="tx3"></p>
+        
+    </div>
+    </body>
+</html>

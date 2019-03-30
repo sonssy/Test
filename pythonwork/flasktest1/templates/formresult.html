@@ -1,0 +1,38 @@
+<html>
+    <head>
+
+            {% include "import.html" %}
+
+        <title>form결과</title>
+    </head>
+    <body>
+
+            {% include "menu.html" %}
+        <fieldset>
+            <legend>입력값</legend>
+        
+        <h1>form에 입력받은 값</h1><br />
+        사용자 아이디 : {{username}}<br />
+        사용자 패스워드 : {{userpass}}<br />
+        직업 :
+        {% for item in job %}
+        <li>{{item}}</li>
+        {% endfor %}
+        취미 :
+        {% for item in hobby %}
+        <li>{{item}}</li>
+        {% endfor %}
+
+        관심분야 :
+        {% for item in chk_info %}
+        <li>{{item}}</li>
+        {% endfor %}
+
+        성별 : {{sex}}
+        <br />
+
+        자기소개 : {{content}}
+
+    </fieldset>
+    </body>
+</html>

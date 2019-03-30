@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>제이쿼리테스트</title>
+        
+        <script src="/static/js/jquery-3.3.1.min.js"></script>
+
+        <script>
+            $(function(){
+
+                var use = confirm('바꾸시겠습니까?');
+                
+                if(use==true){
+
+             $("a[title]").css("background","yellow");
+             $("a[href='http://naver.com']").css("background","blue");
+             $("a[href$='net']").css("background","black");
+             $("a[href^='aa']").css("background","red");
+             $("a[href*='ww']").css("background","orange");
+                //값바꾸기
+                $("img").attr("width","200")
+                $("img").prop("height","200")
+                $("img").removeAttr("border")
+                }else{
+                    alert("취소됨");
+                }
+                //숨기기
+                $("#btn").click(function(){
+                    $("#dd").fadeToggle("slow");
+                });
+
+            });
+        </script>
+
+    </head>
+    <body>
+    <div>
+        <p class="blue">dddd</p>
+        <button id="btn">hide</button>
+
+        <a title="move" href="http://nafver.com">nttt</a>
+        <a href="http://naver.com">naver</a>
+        <a href="http://naver.net">navnetet</a>
+        <a href="aatp://naver.com">naaaver</a>
+        <a href="htww//naver.com">wwer</a>
+        
+        <img id="dd" src="/static/img/earth.png" width="500" border="2"/>
+    </div>
+    </body>
+</html>

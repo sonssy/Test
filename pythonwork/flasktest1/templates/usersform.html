@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+  <head>
+
+      {% include "import.html" %}
+    
+    <title>회원가입</title>
+  </head>
+  <body>
+    
+      {% include "menu.html" %}
+
+<div class="container-fluid" style="margin-top: 10px">
+        <div style="height: 10px"></div>
+    <form action="/usersform" method="POST">  
+        <fieldset style="width: 500px; border: 1px solid #cccccc;" align="center">
+            <legend>회원가입</legend>
+            <div class="form-group">
+                    <label for="exampleInputEmail1">사용자 아이디</label>
+                    <input type="text" class="form-control" name="userid" aria-describedby="idHelp" placeholder="Enter userid">
+                    <small id="idHelp" class="form-text text-muted">최소5자 이상, 영문 20자이내로 입력</small>
+            </div>
+            <div class="form-group">
+                    <label for="exampleInputEmail1">비밀번호</label>
+                    <input type="password" class="form-control" name="userpw" aria-describedby="pwHelp" placeholder="Enter pw">
+                    <small id="pwHelp" class="form-text text-muted">최소5자 이상, 영문 20자이내로 입력</small>
+            </div>
+            <div class="form-group">
+                    <label for="exampleInputEmail1">이름</label>
+                    <input type="text" class="form-control" name="username" aria-describedby="nameHelp" placeholder="Enter name">
+                    <small id="nameHelp" class="form-text text-muted">이름 적어주세요</small>
+                  </div>
+            <div class="form-group">
+                    <label for="exampleInputEmail1">나이</label>
+                    <input type="text" class="form-control" name="userage" aria-describedby="ageHelp" placeholder="Enter age">
+                    <small id="ageHelp" class="form-text text-muted">나이 입력 숫자로</small>
+            </div>
+            <div class="form-group">
+                    <label for="exampleInputEmail1">이메일</label>
+                    <input type="email" class="form-control" name="useremail" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">email 적어주세요</small>
+            </div>
+            <div class="form-group">
+                    <label for="exampleInputEmail1">주소</label>
+                    <input type="text" class="form-control" name="useradd" aria-describedby="addHelp" placeholder="Enter address">
+                    <small id="addHelp" class="form-text text-muted">도로명 주소적어주세요</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">성별</label>
+              <input type="radio" class="form-control" value="man" name="usergender" >남
+              <input type="radio" class="form-control" value="woman" name="usergender" >여
+              
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">전화번호</label>
+              <input type="text" class="form-control" name="usertel" placeholder="tel" aria-describedby="telHelp"/>
+              <small id="telHelp" class="form-text text-muted">숫자만 적어주세요</small>
+            </div>
+
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">동의 하시면 체크</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </fieldset>
+          </form>
+
+
+</div>
+  
+  
+  
+  </body>
+</html>

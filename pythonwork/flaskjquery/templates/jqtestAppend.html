@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>제이쿼리테스트</title>
+        
+        <script src="/static/js/jquery-3.3.1.min.js"></script>
+
+        <script>
+            $(function(){
+              $("#wrap").append("<p>dsad</p>")
+
+            $("#btn1").click(function(){
+                $("p").css("background-color","yellow");
+                return false; //기능차단
+                });
+            $("#btn2").click(function(e){
+                e.preventDefault();//기능차단
+                $("p").css("background-color","purple");
+            });
+            $("#btn3").click(function(){
+            $("p").css("background-color","aqua");
+            });
+
+            $("#btn5").mouseover(function(){
+            $("p").css("background-color","black");
+            });
+            
+            $("#btn5").mouseout(function(){
+            $("p").css("background-color","red");
+            });
+            $("#btn6").hover(function(){
+            $("p").css("background-color","green");
+            },function(){
+               $("p").css("background-color","blue");
+            });
+
+            });
+        </script>
+
+    </head>
+    <body>
+        <p>문서본문</p>
+        <div id="wrap"></div>
+
+        <a href="http://www.naver.com" id="btn1">버튼1</a><br /><br />
+        <a href="http://www.naver.com" id="btn2">버튼2</a><br /><br />
+        <a href="http://www.naver.com" target="_blank" id="btn3">버튼3</a>
+        <p>내용</p>
+        <button id="btn5">mouse</button>
+        <button id="btn6">hover</button>
+
+    </div>
+    </body>
+</html>

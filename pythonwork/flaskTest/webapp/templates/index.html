@@ -1,0 +1,112 @@
+<html>
+    <body bgcolor="burlywood">
+        <h1>Hello from template!</h1>
+        {% if name %}
+        <h1>hello {{name}}!</h1>
+        {% else %}
+        <h1>Hello World!</h1>
+        {% endif %}
+        
+        단락 시작
+        <p align='center'>
+            문단태그<br/>
+            태크입력시 단락과 단락을 구분지어주는 역할
+        </p>
+        단락끝
+
+        <pre>
+            내가 입력한데로
+    그대로
+                  출
+            력됨
+        </pre>
+        
+        <a href="http://www.naver.com" target="_blank" title="네이버홈피">s네이버</a> <!-- _blank=새창으로열림 -->
+
+        <p><a href="#bottom">문서하단으로 이동</a></p>
+        <a name="up">위쪽임</a>
+    <p style="height:1000px">문단높이를 지정</p>
+
+        <!-- 이미지불러오기 -->    
+
+        <img src="{{url_for('static',filename='earth.png')}}" width="265" height="200">
+        <br>
+        <img src="/static/earth.png" border="3"width="265" height="200" >
+
+        <p><img src="/static/earth.png" align="top" width="165" height="100">align top</p>
+        <p><img src="/static/earth.png" align="middle"width="165" height="100">align middle</p>
+        <p><img src="/static/earth.png" align="bottom"width="165" height="100">align bottom</p>
+
+        <p>
+            <img src="/static/earth.png" align="right" hspace="10" vspace="5" width="165" height="100">27일 손예진은 자신의 인스타그램에 두 장의 사진을 올렸다. 손예진은 이국적인 풍경을 배경으로 망중한을 사진으로 담아낸 모습. 선글라스를 착용했지만 그럼에도 화려한 이목구비로 남다른 분위기를 풍겼다.
+            27일 손예진은 자신의 인스타그램에 두 장의 사진을 올렸다. 손예진은 이국적인 풍경을 배경으로 망중한을 사진으로 담아낸 모습. 선글라스를 착용했지만 그럼에도 화려한 이목구비로 남다른 분위기를 풍겼다.
+            27일 손예진은 자신의 인스타그램에 두 장의 사진을 올렸다. 손예진은 이국적인 풍경을 배경으로 망중한을 사진으로 담아낸 모습. 선글라스를 착용했지만 그럼에도 화려한 이목구비로 남다른 분위기를 풍겼다.
+            27일 손예진은 자신의 인스타그램에 두 장의 사진을 올렸다. 손예진은 이국적인 풍경을 배경으로 망중한을 사진으로 담아낸 모습. 선글라스를 착용했지만 그럼에도 화려한 이목구비로 남다른 분위기를 풍겼다.
+            27일 손예진은 자신의 인스타그램에 두 장의 사진을 올렸다. 손예진은 이국적인 풍경을 배경으로 망중한을 사진으로 담아낸 모습. 선글라스를 착용했지만 그럼에도 화려한 이목구비로 남다른 분위기를 풍겼다.
+        </p>
+        <p><img src="/static/present.png" align="bottom"width="165" height="100">align bottom</p>
+    
+        <!-- 테이블(표)만들기 -->
+
+        <table border="1"cellspacing="10" cellpadding="10">
+            <tr>
+                <td bgcolor="tomato">1sell</td>
+                <td>2sell</td>
+            </tr>
+            <tr>
+                <td colspan="2"><img src="/static/present.png" width="165" height="100"></td>
+            </tr>    
+            <tr>    
+                <td colspan="2"  bgcolor="gray">4sell</td>
+            </tr>
+        </table>
+
+        <table border="1">
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td colspan="2">3</td>
+                
+            </tr>
+            <tr>
+                <td rowspan="4">1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr> 
+        </table>
+
+        <ol type="I">
+            <li>wnfqk1</li>
+            <li>wnfqk2</li>
+            <li>wnfqk3</li>
+        </ol>
+        <ul type="disc">
+                <li>wnfqk1</li>
+                <li>wnfqk2</li>
+                <li>wnfqk3</li>
+        </ul>
+
+
+
+        <p><a name="bottom">여기가 문단 끝</a></p>
+        <p><a href="#up">문서위단으로 이동</a></p>
+
+      
+    </body>
+</html>
